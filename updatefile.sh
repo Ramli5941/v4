@@ -116,7 +116,10 @@ wget -O /usr/bin/backup "https://raw.githubusercontent.com/Ramli5941/v4/main/bac
 wget -O /usr/bin/restore "https://raw.githubusercontent.com/Ramli5941/v4/main/backup/restore.sh" && chmod +x /usr/bin/restore
 wget -O /usr/bin/up "https://raw.githubusercontent.com/Ramli5941/v4/main/up.sh" && chmod +x /usr/bin/up
 wget -O jam "https://raw.githubusercontent.com/Ramli5941/v4/main/jam.sh"
-wget https://raw.githubusercontent.com/Ramli5941/v4/main/udp/udp.sh && bash udp.sh
+wget -O quota "https://raw.githubusercontent.com/Ramli5941/v4/main/quota"
+wget -O limit "https://raw.githubusercontent.com/Ramli5941/v4/main/limit.sh"
+wget -O limit-ip "https://raw.githubusercontent.com/Ramli5941/v4/main/limit-ip"
+wget https://raw.githubusercontent.com/Ramli5941/v4/main/udp/udp.sh && bash udp.sh"
 wget https://raw.githubusercontent.com/Andyvpn/Autoscript-by-azi/main/autoscript-ssh-slowdns-main/slowdns.sh && chmod +x slowdns.sh && ./slowdns.sh
 
 #install Bot panel
@@ -173,6 +176,11 @@ chmod +x menu-backup
 chmod +x backup
 chmod +x restore
 chmod +x jam
+chmod +x quota
+chmod +x limit
+chmod +x limit-ip
 echo -e " [INFO] Update Successfully"
 sleep 2
-exit
+echo ""
+read -p "Enter Back To menu"
+menu
