@@ -208,5 +208,5 @@ $domen[crlf][crlf]
 echo -e "${kuning}━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━${NC}" | tee -a /etc/log-create-user.log
 fi
 echo "" | tee -a /etc/log-create-user.log
-read -n 1 -s -r -p "Script By khaiVPN"
+read -n 1 -s -r -p "Script By Ramli"
 menu
