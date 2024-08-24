@@ -115,10 +115,8 @@ wget -O jam "https://raw.githubusercontent.com/Ramli5941/v4/main/jam.sh"
 wget -O quota "https://raw.githubusercontent.com/Ramli5941/v4/main/quota"
 wget -O limit "https://raw.githubusercontent.com/Ramli5941/v4/main/limit.sh"
 wget -O limit-ip "https://raw.githubusercontent.com/Ramli5941/v4/main/limit-ip"
-wget https://raw.githubusercontent.com/Ramli5941/v4/main/udp/udp.sh && bash udp.sh"
+wget -O udp " https://raw.githubusercontent.com/Ramli5941/v4/main/udp/udp.sh"
 
-#install Bot panel
-wget -O bot "https://raw.githubusercontent.com/Ramli5941/v4/main/bot.sh" && chmod +x /usr/bin/bot
 
 chmod +x menu
 chmod +x menu-trial
@@ -169,6 +167,7 @@ chmod +x jam
 chmod +x quota
 chmod +x limit
 chmod +x limit-ip
+chmod +x udp
 echo -e " [INFO] Update Successfully"
 sleep 2
 echo ""
