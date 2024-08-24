@@ -91,7 +91,6 @@ wget -O tendang "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/tendang
 wget -O menu-set "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/menu-set.sh"
 wget -O menu-domain "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/menu-domain.sh"
 wget -O add-host "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/add-host.sh"
-wget -O port-change "https://raw.githubusercontent.com/Ramli5941/v4/main/port/port-change.sh"
 wget -O certv2ray "https://raw.githubusercontent.com/Ramli5941/v4/main/xray/certv2ray.sh"
 wget -O menu-webmin "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/menu-webmin.sh"
 wget -O speedtest "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/speedtest_cli.py"
@@ -101,12 +100,10 @@ wget -O restarts "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/resta
 wget -O bw "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/bw.sh"
 
 # change port
-wget -O port-ssl "https://raw.githubusercontent.com/Ramli5941/v4/main/port/port-ssl.sh"
-wget -O port-ovpn "https://raw.githubusercontent.com/Ramli5941/v4/main/port/port-ovpn.sh"
+
 
 
 wget -O xp "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/xp.sh"
-wget -O acs-set "https://raw.githubusercontent.com/Ramli5941/v4/main/acs-set.sh"
 
 wget -O sshws "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/Ramli5941/v4/main/status.sh"
@@ -114,7 +111,6 @@ wget -O /usr/bin/menu "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/
 wget -0 menu-backup "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/menu-backup.sh"
 wget -O /usr/bin/backup "https://raw.githubusercontent.com/Ramli5941/v4/main/backup/backup.sh" && chmod +x /usr/bin/backup
 wget -O /usr/bin/restore "https://raw.githubusercontent.com/Ramli5941/v4/main/backup/restore.sh" && chmod +x /usr/bin/restore
-wget -O /usr/bin/up "https://raw.githubusercontent.com/Ramli5941/v4/main/up.sh" && chmod +x /usr/bin/up
 wget -O jam "https://raw.githubusercontent.com/Ramli5941/v4/main/jam.sh"
 wget -O quota "https://raw.githubusercontent.com/Ramli5941/v4/main/quota"
 wget -O limit "https://raw.githubusercontent.com/Ramli5941/v4/main/limit.sh"
@@ -154,7 +150,6 @@ chmod +x tendang
 chmod +x menu-set
 chmod +x menu-domain
 chmod +x add-host
-chmod +x port-change
 chmod +x certv2ray
 chmod +x menu-webmin
 chmod +x speedtest
@@ -163,11 +158,7 @@ chmod +x auto-reboot
 chmod +x restarts
 chmod +x bw
 
-chmod +x port-ssl
-chmod +x port-ovpn
-
 chmod +x xp
-chmod +x acs-set
 chmod +x sshws
 chmod +x status
 chmod +x menu-bckp
