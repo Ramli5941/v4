@@ -18,17 +18,30 @@ sed -i '/#vlessgrpc$/a\#& '"$user $exp"'\
 },{"id": "'""$uuid""'","email": "'""$user""'"' /etc/xray/config.json
 export vlesslink1="vless://${uuid}@${sts}${domain}:443?path=/vless&security=tls&encryption=none&type=ws&sni=$sni#${user}"
 export vlesslink2="vless://${uuid}@${sts}${domain}:80?path=/vless&encryption=none&host=$sni&type=ws#${user}"
-export vlesslink3="vless://${uuid}@api.useinsider.com:80?path=/vless&encryption=none&host=${sts}${domain}&type=ws#DIGI-APN-${user}"
-export vlesslink4="vless://${uuid}@162.159.134.61:80?path=/vless&encryption=none&host=${sts}${domain}&type=ws#DIGI-BOSSTER-${user}"
+export vlesslink3="vless://${uuid}@162.159.134.61:80?path=/vless&encryption=none&host=${sts}${domain}&type=ws#DIGI-BOSSTER-${user}"
+export vlesslink4="vless://${uuid}@172.66.40.170:80?path=/vless&encryption=none&host=${sts}cdn.opensignal.com.${domain}&type=ws#DIGI-BOSSTER-V2-${user}"
 export vlesslink5="vless://${uuid}@${domain}:80?path=/vless&encryption=none&host=m.pubgmobile.com&type=ws#UMOBILE-FUNZ-${user}"
-export vlesslink6="vless://${uuid}@104.17.113.188:80?path=/vless&encryption=none&host=eurohealthobservatory.who.int.${domain}&type=ws#YES-${user}"
-export vlesslink7="vless://${uuid}@104.17.148.22:80?path=/vless&encryption=none&host=www.speedtest.net.${domain}&type=ws#SELCOM-0BASIC-${user}"
-export vlesslink8="vless://${uuid}@104.17.10.12:80?path=/vless&encryption=none&host=cdn.who.int.${domain}&type=ws#UNIFI-${user}"
+export vlesslink6="vless://${uuid}@104.18.8.53:80?path=/vless&encryption=none&host=${sts}${domain}&type=ws#UMOBILE-${user}"
+export vlesslink7="vless://${uuid}@104.17.113.188:80?path=/vless&encryption=none&host=eurohealthobservatory.who.int.${domain}&type=ws#YES-${user}"
+export vlesslink8="vless://${uuid}@104.17.148.22:80?path=/vless&encryption=none&host=www.speedtest.net.${domain}&type=ws#SELCOM-0BASIC-${user}"
+export vlesslink9="vless://${uuid}@104.17.10.12:80?path=/vless&encryption=none&host=cdn.who.int.${domain}&type=ws#UNIFI-Bebas-${user}"
+export vlesslink10="vless://${uuid}@speedtest.unifi.com.my.${domain}:80?path=/vless&encryption=none&host=&type=ws#Uni5G-${user}"
+export vlesslink11="vless://${uuid}@104.18.6.178:80?path=/vless&encryption=none&host=${sts}speedtest-univ-results-api.speedtest.net.${domain}&type=ws#MAXIS-FREEZE-${user}"
+export vlesslink12="vless://${uuid}@cdn.opensignal.com:80?path=/vless&encryption=none&host=${sts}cdn.opensignal.com.${domain}&type=ws#MAXIS-FREEZE-V2-${user}"
 systemctl restart xray
 clear
 vless1="$(echo $vlesslink1 | base64 -w 0)"
 vless2="$(echo $vlesslink2 | base64 -w 0)"
 vless3="$(echo $vlesslink3 | base64 -w 0)"
+vless4="$(echo $vlesslink3 | base64 -w 0)"
+vless5="$(echo $vlesslink3 | base64 -w 0)"
+vless6="$(echo $vlesslink3 | base64 -w 0)"
+vless7="$(echo $vlesslink3 | base64 -w 0)"
+vless8="$(echo $vlesslink3 | base64 -w 0)"
+vless9="$(echo $vlesslink3 | base64 -w 0)"
+vless10="$(echo $vlesslink3 | base64 -w 0)"
+vless11="$(echo $vlesslink3 | base64 -w 0)"
+vless12="$(echo $vlesslink3 | base64 -w 0)"
 
 TEXT="
 <code>◇━━━━━━━━━━━━━━━━━◇</code>
@@ -72,29 +85,31 @@ echo -e "Encryption     : none"
 echo -e "Network        : ws"
 echo -e "Path           : /vless"
 echo -e "Path           : vless-grpc"
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[1;93m☉————————————————————————☉\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link TLS       : ${vlesslink1}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[1;93m☉————————————————————————☉\033[0m" | tee -a /etc/log-create-user.log
 echo -e "Link none TLS  : ${vlesslink2}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link DIGI APN     : ${vlesslink3}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link DIGI-BOSSTER : ${vlesslink4}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link UMOBILE-FUNZ : ${vlesslink5}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link YES          : ${vlesslink6}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link SELCOM-0BASIC: ${vlesslink7}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
-echo -e "Link UNIFI        : ${vlesslink8}" | tee -a /etc/log-create-user.log
-echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
+echo -e "\033[1;93m☉————————————————————————☉\033[0m" | tee -a /etc/log-create-user.log
+echo -e "Link DIGI-BOSSTER: ${vlesslink3}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link DIGI-BOSSTER-V2: ${vlesslink4}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link Umobile-funz: ${vlesslink5}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link Umobile     : ${vlesslink6}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link YES.        : ${vlesslink7}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link SELCOM-0BASIC: ${vlesslink8}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link UNIFI-Bebas : ${vlesslink9}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link UNIFI-Uni5G : ${vlesslink10}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link MAXIS-FREEZE : ${vlesslink11}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
+echo -e "Link MAXIS-FREEZE-V2 : ${vlesslink12}"
+echo -e "\033[1;93m☉————————————————————————☉\033[0m"
 echo -e "\e[33m━━━━━━━━━━━━━━━━━━━━━━\033[0m" | tee -a /etc/log-create-user.log
 echo -e "\e[33m name      : ${user}" | tee -a /etc/log-create-user.log
 echo -e "\e[33mExpired On : $exp" | tee -a /etc/log-create-user.log
