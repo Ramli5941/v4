@@ -112,7 +112,6 @@ wget -O xp "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/xp.sh"
 wget -O sshws "https://raw.githubusercontent.com/Ramli5941/v4/main/ssh/sshws.sh"
 wget -O status "https://raw.githubusercontent.com/Ramli5941/v4/main/status.sh"
 wget -O /usr/bin/menu "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/menu.sh" && chmod +x /usr/bin/menu
-wget -0 menu-backup "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/menu-backup.sh"
 wget -O jam "https://raw.githubusercontent.com/Ramli5941/v4/main/jam.sh"
 wget -O quota "https://raw.githubusercontent.com/Ramli5941/v4/main/quota"
 wget -O limit "https://raw.githubusercontent.com/Ramli5941/v4/main/limit.sh"
