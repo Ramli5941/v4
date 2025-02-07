@@ -98,7 +98,7 @@ wget -O auto-reboot "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/au
 wget -O restarts "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/restarts.sh"
 wget -O bw "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/bw.sh"
 wget -O m-helium "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/m-helium.sh"
-wget -O autobackup "hhttps://raw.githubusercontent.com/Ramli5941/v4/main/menu/autobackup"
+wget -O autobackup "https://raw.githubusercontent.com/Ramli5941/v4/main/menu/autobackup"
 wget -O updatefile "https://raw.githubusercontent.com/Ramli5941/v4/main/updatefile.sh"
 
 # change port
