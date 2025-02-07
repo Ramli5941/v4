@@ -216,7 +216,7 @@ clear
 echo -e ""
 echo -e ""
 echo -e "               ${BIPurple}Premium Script : ${BIPurple}Ramli${NC}"
-echo -e "              ${BIPurple} SCRIPT MULTI V4.0 STABILE " | lolcat
+echo -e "               ${BIPurple} SCRIPT MULTI V4.0 STABILE "
 echo -e "${BIBlue} ┌─────────────────────────────────────────────────────┐"
 echo -e "${BIBlue} │                     Informations                    |"
 echo -e "${BIBlue} │=====================================================|"
