@@ -115,6 +115,7 @@ wget -O quota "https://raw.githubusercontent.com/Ramli5941/v4/main/quota"
 wget -O limit "https://raw.githubusercontent.com/Ramli5941/v4/main/limit.sh"
 wget -O limit-ip "https://raw.githubusercontent.com/Ramli5941/v4/main/limit-ip"
 wget -O udp " https://raw.githubusercontent.com/Ramli5941/v4/main/udp/udp.sh"
+wget -O dns2 " https://raw.githubusercontent.com/KhaiVpn767/SlowDnsV1/main/dns2.sh"
 
 
 chmod +x menu
@@ -167,7 +168,9 @@ chmod +x quota
 chmod +x limit
 chmod +x limit-ip
 chmod +x udp
-echo -e " [INFO] Update Successfully"
+chmod +x dns2
+
+echo -e " [INFO] Update Berjaya!!"
 sleep 2
 echo ""
 read -p "Enter Back To menu"
