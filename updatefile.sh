@@ -166,7 +166,7 @@ chmod +x quota
 chmod +x limit
 chmod +x limit-ip
 
-👍👍👍👍
+echo -e " 👍👍👍👍"
 echo -e " [INFO] Update Berjaya!!"
 sleep 2
 echo ""
