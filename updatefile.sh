@@ -45,8 +45,6 @@ rm -rf xp
 rm -rf acs-set
 rm -rf sshws
 rm -rf status
-rm -rf menu-backup
-rm -rf backup
 rm -rf restore
 rm -rf jam
 rm -rf up
@@ -163,8 +161,6 @@ chmod +x updatefile
 chmod +x xp
 chmod +x sshws
 chmod +x status
-chmod +x menu-backup
-chmod +x backup
 chmod +x restore
 chmod +x jam
 chmod +x quota
