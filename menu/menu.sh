@@ -230,7 +230,7 @@ echo -e " ${BIBlue}└───────────────────�
 echo -e "     ${BIWhite} SSH ${NC}: $ressh"" ${BIWhite} NGINX ${NC}: $resngx"" ${BIWhite}  XRAY ${NC}: $resv2r"" ${BIWhite} TROJAN ${NC}: $resv2r${NC}"
 echo -e "   ${BIWhite}     STUNNEL ${NC}: $resst" "${BIWhite} DROPBEAR ${NC}: $resdbr" "${BIWhite} SSH-WS ${NC}: $ressshws${NC}"
 echo -e "${BIBlue} ┌─────────────────────────────────────────────────────┐"
-echo -e "${BIRed} │                       OTHER MENU                    │ "
+echo -e "${BIRed} │                     OTHER MENU                      │ "
 echo -e "${BIBlue} │─────────────────────────────────────────────────────┘"
 echo -e "${BIBlue} │${NC}${BIYellow} [•1]${NC}📨 ${BIWhite} SSH${NC}             " "${BIYellow}[•7]${NC}📨 ${BIWhite} CHECK RUNNING${NC}"
 echo -e "${BIBlue} │${NC}${BIYellow} [•2]${NC}📨 ${BIWhite} VMESS${NC}           " "${BIYellow}[•8]${NC}📨 ${BIWhite} RESTR SERVICE${NC}"       
