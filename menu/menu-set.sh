@@ -35,7 +35,7 @@ case $opt in
 5) clear ; auto-reboot ; exit ;;
 6) clear ; speedtest ; exit ;;
 7) clear ; autobackup ;;
-8) clear ; wget https://raw.githubusercontent.com/KhaiVpn767/SlowDnsV1/main/dns2.sh && chmod +x dns2.sh && ./dns2.sh ;;
+8) clear ; dns2 ;;
 9) clear ; m-helium;;
 0) clear ; menu ; exit ;;
 x) exit ;;
