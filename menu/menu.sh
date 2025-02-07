@@ -244,7 +244,7 @@ echo -e "${BIBlue} │ \033[0m ${BOLD}${BIPurple}XXX${BIYellow} SSH${BIPurple}  
 echo -e "${BIBlue} │ \033[0m ${Blue}     $ssh1          $vma           $vla            $tra              "
 echo -e "${BIBlue} └─────────────────────────────────────────────────────┘"
 echo -e "${BIBlue} ┌─────────────────────────────────────────────────────┐"
-echo -e "${BIBlue} │$NC ${BIYellow}HARI ini${NC}: ${BIYellow}$ttoday$NC ${BIYellow}KEMARIN${NC}: ${red}$tyest$NC ${BIYellow}BULAN${NC}: ${BIYellow}$tmon$NC $NC"
+echo -e "${BIBlue} │$NC ${BIRed}HARI ini${NC}: ${BIYellow}$ttoday$NC ${BIRed}KEMARIN${NC}: ${red}$tyest$NC ${BIRed}BULAN${NC}: ${BIRed}$tmon$NC $NC"
 echo -e "${BIBlue} └─────────────────────────────────────────────────────┘"
 echo -e "${BIBlue} ┌─────────────────────────────────────┐"
 echo -e "${BIBlue} │ Version      ${NC} : ${BIPurple} Ver4. Last Update"
