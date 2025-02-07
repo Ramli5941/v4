@@ -265,7 +265,7 @@ case $opt in
 8) clear ; restarts ;;
 9) clear ; menu-backup ;;
 10) clear ; clearcache ;;
-11) clear ; rm -rf /root/updatefile.sh && wget https://raw.githubusercontent.com/Ramli5941/v4/main/updatefile.sh && chmod +x updatefile.sh && ./updatefile.sh ;;
+11) clear ; updatefile ;;
 12) clear ; about ;;
 00) clear ; menu ;;
 x) exit ;;
